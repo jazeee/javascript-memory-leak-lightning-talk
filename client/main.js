@@ -16,6 +16,8 @@ Template.Test.events({
 			largeString = undefined;
 		}
 
+		$("#notify-test").off("click");
+
 		if(largeString !== undefined){
 			var someObject = {largeString: largeString};
 			$("#notify-test").on("click", function(){

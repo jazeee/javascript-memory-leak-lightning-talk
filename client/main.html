@@ -5,5 +5,15 @@
 <body>
 	<h1>Publisher/Subscriber Pattern and Memory Management</h1>
 	<h4>By Jaz</h4>
-	<button>Test</button>
+	{{>Test}}
 </body>
+
+<template name="Test">
+	<ol>
+		<li>Open Chrome Debugger (F12)</li>
+		<li>Open Profiles Tab</li>
+		<li>Choose Record Allocation Timeline</li>
+		<li>Start, then click button below</li>
+	</ol>
+	<button id="allocate-test">Allocate Test</button>
+</template>
